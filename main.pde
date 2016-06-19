@@ -2,7 +2,6 @@ void setup(){
   size(300,600);
   background(255,255,255);
   strokeWeight(3);
-  // 27 lines
 }
 
 float[] H1 = {0,100,200};
