@@ -1,7 +1,18 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+
+Minim minim;
+AudioPlayer song;
+BeatDetect beat;
+
 void setup(){
   size(300,600);
   background(255,255,255);
   strokeWeight(3);
+  minim = new Minim(this);
+  song = minim.loadFile("the_mother_we_share.mp3", 1024);
+  song.play();
+  beat = new BeatDetect(song.bufferSize(), song.sampleRate());
 }
 
 float[] H1 = {0,100,200};
@@ -10,20 +21,16 @@ float[] H3 = {100,200,300};
 float[] V1 = {100,200};
 float[] V2 = {100,200,300,400,500,600};
 
-int i = 0;
 
 void draw(){
+ beat.detect(song.mix);
   h_display();
   v_display();
   
-  if (i % 8 == 0){
+  if (beat.isOnset() || beat.isKick() || beat.isSnare() || beat.isHat()){
     h_remove();
-  }
-  if (i % 9 == 0){
     v_remove();
   }
-
-  i++;
 }
 
 // choose a random horizontal line to display
