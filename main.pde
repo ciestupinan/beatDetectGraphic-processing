@@ -10,7 +10,7 @@ void setup(){
   background(255,255,255);
   strokeWeight(3);
   minim = new Minim(this);
-  song = minim.loadFile("the_mother_we_share.mp3", 1024);
+  song = minim.loadFile("nahz_original_mix.mp3", 1024);
   song.play();
   beat = new BeatDetect(song.bufferSize(), song.sampleRate());
 }
