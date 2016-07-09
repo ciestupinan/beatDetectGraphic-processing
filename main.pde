@@ -7,7 +7,7 @@ BeatDetect beat;
 
 void setup(){
   size(300,600);
-  background(255,255,255);
+  background(0,0,0);
   strokeWeight(3);
   minim = new Minim(this);
   song = minim.loadFile("nahz_original_mix.mp3", 1024);
@@ -38,7 +38,7 @@ void h_display(){
   float h1 = H1[int(random(H1.length))];
   float h2 = H2[int(random(H2.length))];
   float h3 = H3[int(random(H3.length))];
-  stroke(0,0,0);
+  stroke(0,229,238);
   line(h1,h2,h3,h2);
 }
 
@@ -46,7 +46,7 @@ void h_display(){
 void v_display(){
   float v1 = V1[int(random(V1.length))];
   float v2 = V2[int(random(V2.length))];
-  stroke(0,0,0);
+  stroke(0,229,238);
   line(v1,0,v1,v2);
 }
 
@@ -55,7 +55,7 @@ void h_remove(){
   float h1 = H1[int(random(H1.length))];
   float h2 = H2[int(random(H2.length))];
   float h3 = H3[int(random(H3.length))];
-  stroke(255,255,255);
+  stroke(127,255,0);
   line(h1,h2,h3,h2);
 }
 
@@ -63,6 +63,6 @@ void h_remove(){
 void v_remove(){
   float v1 = V1[int(random(V1.length))];
   float v2 = V2[int(random(V2.length))];
-  stroke(255,255,255);
+  stroke(127,255,0);
   line(v1,0,v1,v2);
 }
