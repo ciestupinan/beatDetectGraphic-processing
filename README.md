@@ -1,4 +1,4 @@
-# beatDetectGraphic-processing
+# Music Visualizer Using Processing
 
 My inspiration for this project comes from a CHVRCHES concert. During the band's performance, a flashing grid appeared in the background and caught my eye. For my first processing project, I wanted to replicate this. Using the Minim BeatDetect library, the grid moves to the beat of the song.
 
