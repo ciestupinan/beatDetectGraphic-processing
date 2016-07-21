@@ -42,7 +42,7 @@ void h_display(){
   line(h1,h2,h3,h2);
 }
 
-//choose a random vertical line to display
+// choose a random vertical line to display
 void v_display(){
   float v1 = V1[int(random(V1.length))];
   float v2 = V2[int(random(V2.length))];
@@ -50,7 +50,7 @@ void v_display(){
   line(v1,0,v1,v2);
 }
 
-//'remove' a random horitzonal line
+// 'remove' a random horitzonal line
 void h_remove(){
   float h1 = H1[int(random(H1.length))];
   float h2 = H2[int(random(H2.length))];
@@ -59,7 +59,7 @@ void h_remove(){
   line(h1,h2,h3,h2);
 }
 
-//'remove' a random veritcal line
+// 'remove' a random veritcal line
 void v_remove(){
   float v1 = V1[int(random(V1.length))];
   float v2 = V2[int(random(V2.length))];
