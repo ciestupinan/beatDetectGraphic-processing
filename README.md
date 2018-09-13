@@ -4,4 +4,4 @@ My inspiration for this project comes from a CHVRCHES concert. During the band's
 
 You can download the song at https://soundcloud.com/enjoytunesofficial/miza-nahz-original-mix or replace it with an mp3 of your choice. To make things easy, the song file should be in this project folder. 
 
-The next step in this project is to make a 3D music visualizer.
+check it out! https://youtu.be/KEv17byz_DE
